@@ -1,0 +1,108 @@
+body {
+    background-image: url('../../defaultBackground.png');
+    background-repeat: repeat;
+}
+
+#wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#visualize, #randomize {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    background: #ff4655;
+    border-color: #ff4655;
+    padding: 4px 10px 4px 10px;
+    text-decoration: none;
+}
+
+#visualize:disabled, #randomize:disabled {
+    border-color: #666666;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+#speed, #size, #algorithms {
+    background-color: #ece8e1;
+    color: #0f1923;
+    padding: 8px 4px 8px 4px;
+    font-family: Helvetica, sans-serif;
+}
+
+#speed, #size, #algorithms option {
+    background-color: #ece8e1;
+}
+
+.navbar {
+    overflow: hidden;
+    height: 50px;
+    background-color: #111111;
+    font-family: 'VALORANT', sans-serif;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color:red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+    border-bottom: 3px solid red;
+}
+
+.navbar a.active {
+    border-bottom: 3px solid red;
+}
+
+.barChart {
+    margin: auto;
+    height: 500px;
+    width: 98%;
+    background-color: #111111;
+    vertical-align: bottom;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.bar {
+    transition: 0.2s all ease;
+    display: inline-block;
+    width: 9.7%;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.container.space-around {
+    display: flex;
+    justify-content: space-around;
+    font-family: Helvetica, sans-serif;
+}
+
+.block__id {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -26px;
+    width: 100%;
+    text-align: center;
+     color: white; 
+   
+}

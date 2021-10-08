@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting Visualizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="src/styles/sorting.css" type="text/css" />
+    <link rel="stylesheet" href="src/styles/descriptions.css" type="text/css" />
+    <script type="module" src="src/model/sorting.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div class="navbar">
+        <a href="pathfinding.html">Pathfinding Visualizer</a>
+        <a href="sorting.html" class="active">Sorting Visualizer</a>
+    </div>
+    <div class="container space-around" style="padding: 10px">
+        <div>
+            <label for="algorithms" style="font-size: 20px; color: white">Algorithm:</label>
+            <select name="algorithms" id="algorithms">
+                <option value="BubbleSort">Bubble Sort</option>
+                <option value="SelectionSort">Selection Sort</option>
+                <option value="InsertionSort">Insertion Sort</option>
+                <option value="QuickSort">Quick Sort</option>
+                <option value="HeapSort">Heap Sort</option>
+            </select>
+        </div>
+        <div>
+            <label for="size" style="font-size: 20px; color: white">Size:</label>
+            <select name="size" id="size">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="75">75</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+        <div>
+            <label for="speed" style="font-size: 20px; color: white">Speed:</label>
+            <select name="speed" id="speed">
+                <option value="800">0.25x</option>
+                <option value="400">0.50x</option>
+                <option value="200">1x</option>
+                <option value="100">2x</option>
+                <option value="50">4x</option>
+                <option value="25">8x</option>
+            </select>
+        </div>
+        <button type="button" id="visualize" value="not clicked">Visualize</button>
+        <button type="button" id="randomize">Randomize</button>
+    </div>
+    <div class="barChart"></div>
+    <div class="algorithmWrapper">
+        <div class="textWrapper">
+            <h1 id="#algorithmName" style="padding-top: 30px; font-family: 'VALORANT', sans-serif;">Select Algorithm</h1>
+            <div class="row">
+                <div class="column">
+                    <div class="leftParagraph">
+                        <p id="#algorithmDescription" style="width: 95%">You must select an algorithm before you can visualize it's execution on an array of numbers.</p>
+                    </div>
+                </div>
+                <div class="rightColumn">
+                    <div class="rightParagraph">
+                        <h2 style="font-family: 'VALORANT', sans-serif;">Performance</h2>
+                        <p id="#worstTime" style="white-space: pre">Worst-case time complexity</p>
+                        <p id="#averageTime" style="white-space: pre">Average time complexity</p>
+                        <p id="#bestTime" style="white-space: pre">Best-case time complexity</p>
+                        <p id="#worstSpace" style="white-space: pre">Worst-case space complexity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
